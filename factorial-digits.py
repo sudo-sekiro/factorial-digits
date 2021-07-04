@@ -16,9 +16,10 @@ def main():
     #loop breaks when factorial = 0, no longer any digits to add
     output = 0
     while(factorial>0):
-        output += factorial%10
-        factorial = factorial//10
-    #print output
+        #divmod returns [quotient, remainder] (seperating one digit at a time)
+        factorial, output_temp = (numpy.divmod(factorial, 10))
+        output = numpy.add(output, output_temp)
+    #print the final value out to terminal
     print(output)
 
 if __name__ == '__main__':
