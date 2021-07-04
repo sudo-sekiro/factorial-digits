@@ -17,7 +17,7 @@ def main():
     output = 0
     while(factorial>0):
         #divmod returns [quotient, remainder] (seperating one digit at a time)
-        factorial, output_temp = (numpy.divmod(factorial, 10))
+        factorial, output_temp = (divmod(factorial, 10))
         output = numpy.add(output, output_temp)
     #print the final value out to terminal
     print(output)
