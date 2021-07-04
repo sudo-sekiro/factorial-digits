@@ -14,9 +14,9 @@ To build this container navigate to the folder containing the dockerfile and fac
 
 Once the build is complete run the container using:
 
-### docker run --rm factorial-digits <int>  
+### docker run --rm factorial-digits \<int\>  
   
-  where <int> is a positive number to be inputted
+  where \<int\> is a positive number to be inputted
 
 ## Dependencies
   
